@@ -11,6 +11,14 @@ if(navToggle){
     })
 }
 
+/*===== LOADER =====*/
+let loader = document.getElementById("loader")
+window.addEventListener('load', function(){
+  this.setTimeout(function(){
+  loader.style.display="none"
+  },1200);
+});
+
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose){
